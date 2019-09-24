@@ -1,2 +1,5 @@
-# heroku-chat-by-yubert
-Simple Chat App using socket io by Yubert Mariscal
+# chat-example
+using socket.io
+
+
+

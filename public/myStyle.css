@@ -1,0 +1,341 @@
+html, body {
+  height: 98%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-image: url("http://www.sclance.com/backgrounds/simple-black-and-white-background-designs/simple-black-and-white-background-designs_2014642.jpg");
+}
+body { font: 13px Helvetica, Arial; color: #36048c;}
+#inputName { 
+  width: 350px;
+  margin-bottom: 10px;
+  padding-top: 15%;
+
+
+}
+#chatbox { 
+   margin-top: 10px;
+   padding: 3px;
+   padding-right: 10px;
+   padding-left: 10px;
+  width: 100%;
+ 
+
+
+ }
+#chatbox input { 
+  padding: 15px;
+  width: 100%;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+ }
+  input:focus { 
+    outline: none;
+   
+  }
+
+  ::placeholder {
+    color:green; 
+  }
+
+#messages { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+#messages li { 
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) { 
+  background: #eee; 
+}
+
+#messages { 
+  margin-bottom: 40px
+
+}
+#m {         
+  border:2px solid black;
+  color:  black;
+}
+
+#typing {
+  color:grey;
+  margin-left: 15px;
+  margin-right:10%;
+}
+
+#close {
+  float: right;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#userId {
+  display: none;
+}
+
+
+.btn {
+  width: 100%;
+}
+
+#chatbox2 {
+  top: 400px;
+  width: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display:none;
+}
+.row{
+  height: 92%;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+#messagesHolder {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  height: 90%;
+  overflow: auto;
+}
+#header {
+  height: 60px;
+  position: fixed;
+  z-index: 9999; 
+ background-color: black;
+  margin-left: 0%;
+}
+#footer {
+  height: 60px;
+  position: fixed;
+  z-index: -9999; 
+  background-color: black;
+  margin-left: 0%;
+}
+
+
+#username {
+  font-size: 17px;
+  border:2px solid black;
+  color:  #0cf032;
+}
+
+  #username::placeholder {
+    color:#a430f1; 
+  }
+
+
+#chatmateName {
+  padding: 10px;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  background-color:  white;
+}
+
+
+#pmholder {
+  height: 310px;
+  overflow: auto;
+  padding: 10px;
+  padding-top: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  margin-top: 0;
+
+}
+
+#m2 {
+  border-radius: 0;
+  width: 100%;
+  padding: 10px;
+  border:0;
+  background-color: white;
+  border-top: 1px solid black;
+}
+
+
+
+.newMes {
+  background-color: lightgrey;
+  padding-right: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  height: -webkit-fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+  float: right;
+  text-align: center;
+}
+
+#myMess {
+  float: right;
+  margin-left: 10%;
+  background-color: skyblue;
+}
+
+#othersMess {
+  float: left;
+  margin-right:10%;
+  background-color: lawngreen;
+}
+
+
+
+#mesDivHolder {
+  padding-right: 0;
+  margin-top:10px;
+  height: 33px;
+}
+
+#mm {
+  float: right;
+  margin-left: 10%;
+  background-color: lightblue;
+}
+
+#ntm {
+  float: left;
+  margin-right:10%;
+  background-color: lawngreen;
+}
+
+.pmdiv {
+  background-color: lightgrey;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  height: -webkit-fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
+  float: right;
+  text-align: center;
+}
+
+.pmdivh {
+  padding-right: 0;
+  margin-top:10px;
+  height: 25px;
+}
+
+#PM {
+  padding-right: 9px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+  padding-left: 9px;
+}
+.typingPM {
+  float: left;
+}
+
+.otherUser {
+  width: 100%;
+  margin-left: 0;
+  padding-top: 0px;
+  margin-top: 0;
+  padding-left: 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 50px;
+  text-align: left;
+
+}
+
+#activeUsers {
+  margin: 0;
+}
+
+#User {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.Ouser {
+  width: 100%;
+  padding:10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-right: 0;
+  background-color: #7e9af7;
+  box-shadow: -5px 5px 5px lightgrey;
+}
+
+.myname {
+  float: right;
+  margin-right: 20px;
+  margin-top: 14px;
+  color:white;
+}
+
+#start {
+  width: 35%;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 17px;
+  border:2px solid black;
+  color:  #a550de;
+}
+
+ #main {
+  height: 100%;
+  padding-bottom: 0px;
+  padding:15px;
+  background-color: transparent;
+}
+
+#active {
+  height: 100%;
+  border-left:1px solid black;
+  overflow: auto;
+  padding: 15px;
+  text-align: left;
+  padding-right: 0;
+  margin-right: 0;
+} 
+
+#otherConvo{
+  overflow: auto;
+  border-right: 1px solid black;
+  height: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.newChatWindow {
+  margin-top: 40px;
+  background-color: #f7f7fa;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: auto;
+  height: 400px;
+  border:1px solid black;
+  box-shadow: -5px 5px 5px lightgrey;
+}
+
+#mainbody {
+  height: 100%;
+  padding-top: 60px;
+}

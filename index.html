@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <head>
+    <title id='title'>Chat</title>
+    <link rel="shortcut icon" href="https://yourdigitalleadsource.com/wp-content/uploads/2019/01/websitelivechat1.jpg" />
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+  </head>
+  <body>
+      
+      <center>
+        <form id ="inputName" action="">
+          <div class="form-group">
+            <img src="https://yourdigitalleadsource.com/wp-content/uploads/2019/01/websitelivechat1.jpg" style="width: 100%;margin-top:50%;margin-bottom: 15%">
+            
+            <input class="form-control" id="username" placeholder="Enter your username" autofocus='' required=""></input>
+          </div>
+          <div class="form-group">
+            <button id ="start" class="btn btn-default" type="submit">start</button>
+          </div>
+        </form>
+      </center>
+      <div class="container">
+        <div  class="row" id="header">
+          <!-- <button class="btn btn-default" id="logout">Logout</button> -->
+          <h2 class="myname"></h2></div>
+        <div id="mainbody" class="row">
+          <div class="col-sm-4" id="otherConvo">
+            <ul id="chatboxes"></ul>
+          </div>
+
+          <div class="col-sm-3" id="active">
+              <div class="Ouser"><h4>Online users</h4></div>
+                <span id="activeUsers"></span>
+              </div>
+
+          <div class="col-sm-5" id="main">
+            <div id="messagesHolder">
+              <div id="messages"></div>
+            </div>
+            <form autocomplete='off' id="chatbox" action="">
+            <input id='m' autofocus='' autocomplete='off' placeholder="Send a message" />
+            </form>
+          </div>
+
+          
+        </div>
+      </div>
+      <div  class="row" id="footer"></div>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
